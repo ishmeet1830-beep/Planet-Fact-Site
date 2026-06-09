@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Planet</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<!-- Antonio font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+	<!-- Spartan font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+	<script src="./js/main.js" defer></script>
+</head>
+
+<body class="background">
+
+	<header class=" header-border">
+		<div class="container">
+			<div class="header-ctrl">
+				<div class="logo">
+					<a href="#">
+						<p>THE PLANETS</p>
+					</a>
+				</div>
+				<nav>
+					<ul class="nav-bar">
+						<li main-tab data-tab="tab-1" class="active-tab"><a href="#">MERCURY</a></li>
+						<li main-tab data-tab="tab-2"><a href="#">VENUS</a></li>
+						<li main-tab data-tab="tab-3"><a href="#">EARTH</a></li>
+						<li main-tab data-tab="tab-4"><a href="#">MARS</a></li>
+						<li main-tab data-tab="tab-5"><a href="#">JUPITER</a></li>
+						<li main-tab data-tab="tab-6"><a href="#">SATURN</a></li>
+						<li main-tab data-tab="tab-7"><a href="#">URANUS</a></li>
+						<li main-tab data-tab="tab-8"><a href="#">NEPTUNE</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- mobile header -->
+			<div class="mobile-header">
+				<div class="logo">
+					<a href="#">
+						<p>THE PLANETS</p>
+					</a>
+				</div>
+
+				<div class="menu-btn" id="menu-open-btn">
+					<img src="images/menu-icon.svg" alt="menu-icon">
+				</div>
+			</div>
+
+			<div class="menu-panel " id="menu-panel">
+				<div class="panel-item mercury" data-tab="tab-1" main-tab>
+					<div class="span-and-name ">
+						<span></span>
+						<p>MERCURY</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item venus" data-tab="tab-2" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>VENUS</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item earth" data-tab="tab-3" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>EARTH</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item mars" data-tab="tab-4" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>MARS</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item jupiter" data-tab="tab-5" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>JUPITER</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item saturn" data-tab="tab-6" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>SATURN</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item uranus" data-tab="tab-7" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>URANUS</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+
+				<div class="panel-item neptune" data-tab="tab-8" main-tab>
+					<div class="span-and-name">
+						<span></span>
+						<p>NEPTUNE</p>
+					</div>
+					<img src="images/right-arrow.svg" alt="icon">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="container">
+
+		<!-- MERCURY -->
+		<section main-tab main-tab data-tab="tab-1" class="planet-content active-planet">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/mercury.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/mercury-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/mercury-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>MERCURY</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">
+							Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit
+							around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. Mercury is one
+							of four terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							Mercury appears to have a solid silicate crust and mantle overlying a solid, iron sulfide
+							outer core layer, a deeper liquid core layer, and a solid inner core. The planet's density
+							is the second highest in the Solar System at 5.427 g/cm3 , only slightly less than Earth's
+							density.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">
+							Mercury's surface is similar in appearance to that of the Moon, showing extensive mare-like
+							plains and heavy cratering, indicating that it has been geologically inactive for billions
+							of years. It is more heterogeneous than either Mars's or the Moon’s.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>58.6 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>87.97 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>2,439.7 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>430°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- VENUS -->
+		<section main-tab data-tab="tab-2" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/venus.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/venus-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/venus-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>VENUS</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">Venus
+							is the second planet from the Sun. It is named after the Roman goddess of love and beauty.
+							As the brightest natural object in Earth's night sky after the Moon, Venus can cast shadows
+							and can be, on rare occasions, visible to the naked eye in broad daylight.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							The similarity in size and density between Venus and Earth suggests they share a similar
+							internal structure: a core, mantle, and crust. Like that of Earth, Venusian core is most
+							likely at least partially liquid because the two planets have been cooling at about the same
+							rate.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">Much
+							of the Venusian surface appears to have been shaped by volcanic activity. Venus has several
+							times as many volcanoes as Earth, and it has 167 large volcanoes that are over 100 km (60
+							mi) across. The only volcanic complex of this size on Earth is the Big Island of Hawaii.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>243 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>224.7 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>6,051.8 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>471°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- EARTH -->
+		<section main-tab data-tab="tab-3" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/earth.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/earth-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/earth-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>EARTH</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">Third
+							planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface
+							is land with remaining 70.8% is covered with water. Earth's distance from the Sun, physical
+							properties and geological history have allowed life to evolve and thrive.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							Earth's interior, like that of the other terrestrial planets, is divided into layers by
+							their chemical or physical (rheological) properties. The outer layer is a chemically
+							distinct silicate solid crust, which is underlain by a highly viscous solid mantle.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">The
+							total surface area of Earth is about 510 million km2. The continental crust consists of
+							lower density material such as the igneous rocks granite and andesite. Less common is
+							basalt, a denser volcanic rock that is the primary constituent of the ocean floors.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>0.99 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>365.26 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>6,371 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>16°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- MARS -->
+		<section main-tab data-tab="tab-4" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/mars.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/mars-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images" src="images/mars-3.png"
+						alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>MARS</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">Mars
+							is the fourth planet from the Sun and the second-smallest planet in the Solar System, being
+							larger than only Mercury. In English, Mars carries the name of the Roman god of war and is
+							often referred to as the "Red Planet".</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							Like Earth, Mars has differentiated into a dense metallic core overlaid by less dense
+							materials. Scientists initially determined that the core is at least partially liquid.
+							Current models of its interior imply a core consisting primarily of iron and nickel with
+							about 16–17% sulfur.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">Mars
+							is a terrestrial planet whose surface consists of minerals containing silicon and oxygen,
+							metals, and other elements that typically make up rock. The surface is primarily composed of
+							tholeiitic basalt, although parts are more silica-rich than typical basalt.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>1.03 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>1.88 DAYS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>3,389.5 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>−28°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- JUPITER -->
+		<section main-tab data-tab="tab-5" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/jupiter.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/jupiter-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/jupiter-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>JUPITER</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">
+							Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas
+							giant with a mass two and a half times that of all the other planets in the Solar System
+							combined, but less than one-thousandth the mass of the Sun.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							When the Juno arrived in 2016, it found that Jupiter has a very diffuse core that mixes into
+							its mantle. A possible cause is an impact from a planet of about ten Earth masses a few
+							million years after Jupiter's formation, which would have disrupted an originally solid
+							Jovian core.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">The
+							best known feature of Jupiter is the Great Red Spot, a persistent anticyclonic storm located
+							22° south of the equator. It is known to have existed since at least 1831, and possibly
+							since 1665.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>9.93 HOURS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>11.86 YEARS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>69,911 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>-108°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- SATURN -->
+		<section main-tab data-tab="tab-6" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/saturn.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/saturn-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/saturn-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>SATURN</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">Saturn
+							is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter.
+							It is a gas giant with an average radius of about nine and a half times that of Earth. It
+							only has one-eighth the average density of Earth.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							Despite consisting mostly of hydrogen and helium, most of Saturn's mass is not in the gas
+							phase, because hydrogen becomes a non-ideal liquid when the density is above 0.01 g/cm3,
+							which is reached at a radius containing 99.9% of Saturn's mass.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">The
+							outer atmosphere of Saturn contains 96.3% molecular hydrogen and 3.25% helium by volume. The
+							planet's most famous feature is its prominent ring system, which is composed mostly of ice
+							particles with a smaller amount of rocky debris and dust. .</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>10.8 HOURS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>29.46 YEARS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>58,232 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>-138°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- URANUS -->
+		<section main-tab data-tab="tab-7" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/uranus.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/uranus-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/uranus-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>URANUS</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">Uranus
+							is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky,
+							Uranus according to Greek mythology, was the great-grandfather of Ares. It has the
+							third-largest planetary radius and fourth-largest planetary mass in the Solar System.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							The standard model of Uranus's structure is that it consists of three layers: a rocky
+							(silicate/iron–nickel) core in the centre, an icy mantle in the middle and an outer gaseous
+							hydrogen/helium envelope. The core is relatively small, with a mass of only 0.55 Earth
+							masses.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">The
+							composition of Uranus's atmosphere is different from its bulk, consisting mainly of
+							molecular hydrogen and helium. The helium molar fraction, i.e. the number of helium atoms
+							per molecule of gas, is 0.15±0.03 in the upper troposphere.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>17.2 HOURS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>84 YEARS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>25,362 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>-195°C</h5>
+				</div>
+			</div>
+		</section>
+
+		<!-- NEPTUNE -->
+		<section main-tab data-tab="tab-8" class="planet-content">
+			<div class="main-matter">
+
+				<div class="mobile-info-tabs">
+					<button class="mobile-single-tab active-btn mercury" data-subtab="overview" data-subtabbutton>
+						<h5>OVERVIEW</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="internal-structure" data-subtabbutton>
+						<h5>INTERNAL</h5>
+					</button>
+
+					<button class="mobile-single-tab mercury" data-subtab="surface-geology" data-subtabbutton>
+						<h5>SURFACE</h5>
+					</button>
+				</div>
+				
+				<div class="planet-image">
+					<img data-subtabcontent data-subtab="overview" class="planet__images show" src="images/neptune.png"
+						alt="image">
+
+					<img data-subtabcontent data-subtab="internal-structure" class="planet__images"
+						src="images/neptune-2.png" alt="image">
+
+					<img data-subtabcontent data-subtab="surface-geology" class="planet__images"
+						src="images/neptune-3.png" alt="image">
+				</div>
+
+				<div class="written-content">
+					<div class="main-text">
+						<h1>NEPTUNE</h1>
+						<p data-subtabcontent data-subtab="overview" class="description planet__description show">
+							Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it
+							is the fourth-largest planet by diameter, the third-most-massive planet, and the densest
+							giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.</p>
+
+						<p data-subtabcontent data-subtab="internal-structure" class="description planet__description">
+							Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% to 10%
+							of its mass and extends perhaps 10% to 20% of the way towards the core. Increasing
+							concentrations of methane, ammonia and water are found in the lower regions.</p>
+
+						<p data-subtabcontent data-subtab="surface-geology" class="description planet__description">
+							Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also
+							present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in the red
+							and infrared portion of the spectrum.</p>
+						<div class="source">
+							<h6>Source : <span>Wikipedia</span></h6>
+							<a href="#"><img src="images/arrow.png" alt="icon"></a>
+						</div>
+					</div>
+
+					<div class="info-tabs">
+						<button class="single-tab active-btn" data-subtab="overview" data-subtabbutton>
+							<p>01</p>
+							<h5>OVERVIEW</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="internal-structure" data-subtabbutton>
+							<p>02</p>
+							<h5>INTERNAL STRUCTURE</h5>
+						</button>
+
+						<button class="single-tab" data-subtab="surface-geology" data-subtabbutton>
+							<p>03</p>
+							<h5>SURFACE GEOLOGY</h5>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="data-columns">
+				<div class="single-column">
+					<h4>ROTATION TIME</h4>
+					<h5>16.08 HOURS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>REVOLUTION TIME</h4>
+					<h5>164.79 YEARS</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>RADIUS</h4>
+					<h5>24,622 KM</h5>
+				</div>
+
+				<div class="single-column">
+					<h4>AVERAGE TEMP.</h4>
+					<h5>-201°C</h5>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+</body>
+
+</html>
