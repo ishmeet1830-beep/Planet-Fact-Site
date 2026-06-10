@@ -9,13 +9,16 @@ menuOpenBtn.addEventListener("click", function(){
 	menuPanel.classList.toggle("show-menu");
 })
 
+let activeSubTab = "overview";
+
 // btn-tabs
 	subTabButtons.forEach(function (singleButton) {
 			singleButton.addEventListener("click", function(){
-			removeButtonActiveClass();
-			singleButton.classList.add("active-btn");
 
 			const targetedTab = singleButton.getAttribute("data-subtab");
+			activeSubTab = targetedTab;
+
+			removeButtonActiveClass();
 			subTabContents.forEach( function(singleContent){
 				const targetedContent = singleContent.getAttribute("data-subtab");
 				if (targetedTab === targetedContent){
@@ -28,9 +31,16 @@ menuOpenBtn.addEventListener("click", function(){
 		});
 	});
 
+
 	const removeButtonActiveClass = function(){
 		subTabButtons.forEach(function(singleButton){
-			singleButton.classList.remove("active-btn");
+			const targetedTab = singleButton.getAttribute("data-subtab");
+			console.log("targetedTab", targetedTab, "activeSubTab", activeSubTab)
+			if(activeSubTab !== targetedTab){
+				singleButton.classList.remove("active-btn");
+			} else {
+				singleButton.classList.add("active-btn");
+			}
 		});
 	};
 
@@ -49,7 +59,6 @@ menuOpenBtn.addEventListener("click", function(){
 				else{
 					planetContent.classList.remove("active-planet")
 				}
-				console.log("planetContent",planetContent)
 			});
 
 			menuPanel.classList.remove("show-menu");

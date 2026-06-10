@@ -59,8 +59,8 @@ a{
   .header-ctrl{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 22px 0 27px;
+    align-items: flex-end;
+    padding-bottom:27px;
   }
 
   .logo a{
@@ -76,7 +76,8 @@ a{
     display: flex;
   }
 
-  .nav-bar a{
+
+  .nav-bar button{
     font-size: 1.4rem;
     line-height: 25px;
     font-weight: 600;
@@ -85,37 +86,38 @@ a{
     color: #c1c1c8;
     padding-top: 30px;
     padding-inline: 16px;
+    border-top: 4px solid transparent;
   }
 
-  .nav-bar li:nth-child(1) a:hover{
+  .nav-bar li:nth-child(1) button:hover, .nav-bar li:nth-child(1) button.active-tab{
     border-top: 4px solid var(--mercury);
   }
 
-  .nav-bar li:nth-child(2) a:hover{
+  .nav-bar li:nth-child(2) button:hover, .nav-bar li:nth-child(2) button.active-tab{
     border-top: 4px solid var(--venus);
   }
 
-  .nav-bar li:nth-child(3) a:hover{
+  .nav-bar li:nth-child(3) button:hover, .nav-bar li:nth-child(3) button.active-tab{
     border-top: 4px solid var(--earth);
   }
 
-  .nav-bar li:nth-child(4) a:hover{
+  .nav-bar li:nth-child(4) button:hover, .nav-bar li:nth-child(4) button.active-tab{
     border-top: 4px solid var(--mars);
   }
 
-  .nav-bar li:nth-child(5) a:hover{
+  .nav-bar li:nth-child(5) button:hover, .nav-bar li:nth-child(5) button.active-tab{
     border-top: 4px solid var(--jupiter);
   }
 
-  .nav-bar li:nth-child(6) a:hover{
+  .nav-bar li:nth-child(6) button:hover, .nav-bar li:nth-child(6) button.active-tab{
     border-top: 4px solid var(--saturn);
   }
 
-  .nav-bar li:nth-child(7) a:hover{
+  .nav-bar li:nth-child(7) button:hover, .nav-bar li:nth-child(7) button.active-tab{
     border-top: 4px solid var(--uranus);
   }
 
-  .nav-bar li:nth-child(8) a:hover{
+  .nav-bar li:nth-child(8) button:hover, .nav-bar li:nth-child(8) button.active-tab{
     border-top: 4px solid var(--neptune);
   }
 
@@ -167,7 +169,7 @@ a{
     background: var(--mercury);    
   }
 
-  .mercury:hover{
+  .mercury:hover, .mobile-single-tab.active-btn{
     background-color: rgb(56, 56, 79);
     border-bottom: 1px solid var(--mercury);
   }
@@ -407,7 +409,7 @@ a{
     border-bottom: 1px solid var(--sub-text-2);
   }
 
-  .mobile-single-tab:hover{
+  .mobile-single-tab:hover,  .mobile-single-tab.active-btn{
     color: rgb(255, 255, 255);
     background: rgb(56, 56, 79);
   }
@@ -432,7 +434,7 @@ a{
 
   .single-column{
     border: 1px solid rgb(56, 56, 79);
-    padding: 20px 94px 27px 23px;
+    padding: 20px  23px;
   }
 
   .data-columns{
@@ -443,11 +445,6 @@ a{
     padding-inline: 35px;
   }
 
-
-
-
-
-
 @media screen and (max-width: 1115px){
   .single-column{
     padding: 20px 23px 27px;
@@ -457,7 +454,10 @@ a{
 @media screen and (max-width: 999px){
   .header-ctrl{
     flex-direction: column;
-    gap: 39px;
+    gap: 18px;
+    align-items: center;
+    padding-bottom: 0;
+    padding-top: 20px;
   }
 
   .main-matter{
@@ -497,47 +497,49 @@ a{
     padding-top: 100px;
   }
 
-  .nav-bar a{
+  .nav-bar button{
     padding-bottom: 30px;
+    border-bottom: 4px solid transparent;
+    border-top: unset;
   }
 
 
-  .nav-bar li:nth-child(1) a:hover{
+  .nav-bar li:nth-child(1) button:hover,.nav-bar li:nth-child(1) button.active-tab{
     border-bottom: 4px solid var(--mercury);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(2) a:hover{
+  .nav-bar li:nth-child(2) button:hover,.nav-bar li:nth-child(2) button.active-tab{
     border-bottom: 4px solid var(--venus);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(3) a:hover{
+  .nav-bar li:nth-child(3) button:hover,.nav-bar li:nth-child(3) button.active-tab{
     border-bottom: 4px solid var(--earth);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(4) a:hover{
+  .nav-bar li:nth-child(4) button:hover,.nav-bar li:nth-child(4) button.active-tab{
     border-bottom: 4px solid var(--mars);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(5) a:hover{
+  .nav-bar li:nth-child(5) button:hover,.nav-bar li:nth-child(5) button.active-tab{
     border-bottom: 4px solid var(--jupiter);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(6) a:hover{
+  .nav-bar li:nth-child(6) button:hover,.nav-bar li:nth-child(6) button.active-tab{
     border-bottom: 4px solid var(--saturn);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(7) a:hover{
+  .nav-bar li:nth-child(7) button:hover,.nav-bar li:nth-child(7) button.active-tab{
     border-bottom: 4px solid var(--uranus);
     border-top: unset;
   }
 
-  .nav-bar li:nth-child(8) a:hover{
+  .nav-bar li:nth-child(8) button:hover,.nav-bar li:nth-child(8) button.active-tab{
     border-bottom: 4px solid var(--neptune);
     border-top: unset;
   }
